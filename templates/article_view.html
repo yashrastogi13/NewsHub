@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div style="padding-left: 20px; padding-right: 20px" class="page-wrapper">
+    <div class="article-entry">
+        <h1>{{object.title}}</h1>
+        <p>by {{object.author}} | {{object.date}} </p>
+        <p>{{object.body}}</p>
+    </div>
+    <p style="padding-top: 20px; font-weight:600">Comments({{object.comments.count}})</p>
+    
+    {% for comment in object.comments.all %}
+        <ul class="list-unstyled">
+            <img src="{% static 'images/profile_logo.png' %}" class = "mr-4" height=50px style="float: left;">
+            <li class="media">
+                <div class="media-body">
+                    <p class="mb-1" style="font-size: 80%; display: block; color:gray"><b>{{comment.author_c}}</b> -{{comment.date_c}}</p>
+                    {{comment}}
+                </div>
+            </li>
+        </ul>
+    {% empty %}
+        <p>No comments here yet :(</p>
+    {% endfor %}
+    <a href="{% url 'post_detail' object.pk %}"><button class="btn btn-danger">Leave a comment</button></a>
+</div>
+{% endblock content %}
