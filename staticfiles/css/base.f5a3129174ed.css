@@ -1,0 +1,31 @@
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    position: relative;
+    padding-top: 20px;
+}
+
+.footer-bottom {
+    background: #303036;
+    color: #686868;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+
+}
+.body{
+    height: 100%;
+    background: grey;
+    font-family: 'Lora',serif;
+}
+.page-wrapper{
+    min-height: 70px;
+}
+
+.page-wrapper-2{
+    min-height: 700px;
+}
