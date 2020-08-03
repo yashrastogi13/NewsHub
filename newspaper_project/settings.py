@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f=%t#*jie7$5naxk(8-&f1dtac+3mi65-m4xgqdmkldy@nnov9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['.herokuapp.com','localhost']
 
 
 # Application definition
@@ -146,6 +146,6 @@ EMAIL_HOST_USER = 'yrastogi13022000@gmail.com'
 EMAIL_HOST_PASSWORD = 'cqjrxarqsvmephso'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Newspaper Team <noreply@newspaper.com>'
+DEFAULT_FROM_EMAIL = 'NewsHub Team <noreply@NewsHub.com>'
 
 TIME_ZONE = 'Asia/Kolkata'
