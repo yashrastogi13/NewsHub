@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     #3rd party apps
     'crispy_forms', 
+    'django_static_fontawesome',
 
     #local apps
     'users.apps.UsersConfig',                      #adding the users app
