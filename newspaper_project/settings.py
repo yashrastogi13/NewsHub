@@ -138,7 +138,8 @@ LOGIN_URL = 'login'
 AUTH_USER_MODEL = 'users.CustomUser'              #telling django to use our custom user model from users app
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK =  'chocolate'#'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACK = ('chocolate','bootstrap4')
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'           #it displays the email in our console
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

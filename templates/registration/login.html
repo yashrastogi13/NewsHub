@@ -7,6 +7,9 @@
         <form method="POST">
             {% csrf_token %}
             {{form.as_p}}
+            <a class = "ml-2" style="text-align: center;" href="{% url 'password_reset' %}">Forgot Password ?</a>
+            <br>
+            <br>
             <button type="Submit" class="btn btn-dark">Login</button>
         </form>
     </div>
