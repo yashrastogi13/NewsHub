@@ -31,7 +31,7 @@ class ArticleListView(LoginRequiredMixin,ListView):
 
 class ArticleDetailView(LoginRequiredMixin,DetailView):
     model = Article
-    template_name = "article_Detail.html"
+    template_name = "article_detail.html"
     login_url = 'login'
 
 class ArticleUpdateView(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
