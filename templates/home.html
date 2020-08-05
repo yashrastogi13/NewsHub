@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <title>{% block title %}Home{% endblock title %}</title>
+        <title>{% block title %}NewsHub{% endblock title %}</title>
         {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static "fontawesome/css/all.min.css" %}" />
+        <link rel = "icon" href = "{% static 'images/web-site.png' %}" type = "image/x-icon"> 
+        <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
         <link href="{% static 'css/home_page.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
     </head>
@@ -70,7 +71,7 @@
             crossorigin="anonymous">
         </script>
         <div class="container navbar-expand-lg" style="margin-left: -15px; margin-top: 0px; position:relative">
-            <div style="filter:blur(5px); -webkit-filter:blur(5px);" class="">
+            <div style="filter:blur(5px); -webkit-filter:blur(5px);">
                 <img src="{% static 'images/newspaper_collage.jpg' %}" alt="Image not available">
             </div>
             <div style="background-color:rgba(0, 0, 0, 0.4);">
